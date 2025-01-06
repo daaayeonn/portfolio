@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dayeon’s Portfolio</title>
+  <link rel="stylesheet" href="./aseets/css/layout.css">
+  <link rel="stylesheet" href="./aseets/css/main.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://unpkg.com/lenis@1.1.10/dist/lenis.min.js"></script>
+  <script src="./aseets/js/index.js" defer></script>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <h1 class="name"><a href="index.html">YEON</a></h1>
+      </div>
+    </header>
+    <main id="container">
+      <section class="visual tr">
+        <h2 class="visual-headline">
+          <span class="headline-text"><span>Create</span></span>
+          <span class="headline-text"><span>Persistence</span><span>INFP</span></span>
+          <span class="headline-text"><span>Sincere</span><span>Happy</span></span>
+          <span class="headline-text" style="font-weight: 700;">Adapts well anywhere</span>
+        </h2>
+        <span class="scroll-text" id="scrollText">scroll</span>
+        <!-- 반딧불이 -->
+        <canvas id="canvas" class="firefly"></canvas>
+        <div class="texture"></div>
+
+        <p class="desc">
+          방송에서는 ‘일본 패밀리’로 새롭게 합류한 8년 차 한일 부부 이정재-케이코가 출연해 스튜디오 출연진과 반갑게 인사를 나눴다. 이정재는 “단기 이민을 와 일본 오카야마 현에 살고 있다”면서 “일본에는 아이들의 성장을 축하하는 전통행사인 ‘시치고산’ 문화가 있다. 산이나 절을 방문해 건강하게 해주셔서 감사하다고 인사를 드리는 것”이라며 후지산의 뷰 스폿을 소개했다.
+        </p>
+
+      </section> <!-- visual -->
+      <section class="preview tr">
+        <div class="inner">
+          <h2 class="blind">프로젝트 미리보기</h2>
+          <div class="preview-wrapper">
+            <ul class="preview-list">
+              <li class="preview-item">
+                <div class="thumb">
+                  <img src=".//aseets/images/betteroff.jpg" alt="Better Off" class="preview-img">
+                </div>
+                <div class="text-wrapper">
+                  <div class="title-wrapper">
+                    <strong class="title en">Better Off</strong>
+                    <span class="type">[clone coding]</span>
+                  </div>
+                  <span class="year">@2024</span>
+                </div>
+              </li>
+              <li class="preview-item">
+                <div class="thumb">
+                  <img src=".//aseets/images/aesop.jpg" alt="Aesop" class="preview-img">
+                </div>
+                <div class="text-wrapper">
+                  <div class="title-wrapper">
+                    <strong class="title en">Aesop</strong>
+                    <span class="type">[renewal]</span>
+                  </div>
+                  <span class="year">@2024</span>
+                </div>
+              </li>
+              <li class="preview-item">
+                <div class="thumb">
+                  <img src=".//aseets/images/tenzr.jpg" alt="Tenzr" class="preview-img">
+                </div>
+                <div class="text-wrapper">
+                  <div class="title-wrapper">
+                    <strong class="title en">Tenzr</strong>
+                    <span class="type">[clone coding]</span>
+                  </div>
+                  <span class="year">@2024</span>
+                </div>
+              </li>
+              <li class="preview-item">
+                <div class="thumb">
+                  <img src=".//aseets/images/wix.webp" alt="Wix Studio" class="preview-img">
+                </div>
+                <div class="text-wrapper">
+                  <div class="title-wrapper">
+                    <strong class="title en">Wix Studio</strong>
+                    <span class="type">[clone coding]</span>
+                  </div>
+                  <span class="year">@2024</span>
+                </div>
+              </li>
+              <li class="preview-item">
+                <div class="thumb">
+                  <img src=".//aseets/images/daegu.jpg" alt="대구광역시청" class="preview-img">
+                </div>
+                <div class="text-wrapper">
+                  <div class="title-wrapper">
+                    <strong class="title">대구광역시청</strong>
+                    <span class="type">[clone coding]</span>
+                  </div>
+                  <span class="year">@2024</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="texture"></div>
+      </section> <!-- preview -->
+      <section class="about tr hs">
+        <div class="inner">
+          <h2 class="headline">ABOUT ME</h2>
+          <div class="content">
+            <div class="keyword-wrapper">
+              <div class="keyword-sticky">
+                <div class="keyword">
+                  <span class="keyword-text 2">웹퍼블리셔</span>
+                  <span class="keyword-text 10">열정적인</span>
+                  <span class="keyword-text 6">Web Publisher</span>
+                  <span class="keyword-text 3">Portfolio</span>
+                  <span class="keyword-text 11">긍정적인</span>
+                  <span class="keyword-text 12">UX / UI</span>
+                  <span class="keyword-text 4">반응형 사이트</span>
+                  <span class="keyword-text 17">Javascript</span>
+                  <span class="keyword-text 5">성실한</span>
+                  <span class="keyword-text 13">CSS</span>
+                  <span class="keyword-text 8">GSAP</span>
+                  <span class="keyword-text 16">프론트엔드 공부중</span>
+                  <span class="keyword-text 7">jQuery</span>
+                  <span class="keyword-text 18">노력하는</span>
+                  <span class="keyword-text 9">ScrollTrigger</span>
+                  <span class="keyword-text 14">열심히</span>
+                  <span class="keyword-text 1">2024</span>
+                  <span class="keyword-text 15">공감을 잘하는</span>
+                  <div class="last-wrapper">
+                    <span class="keyword-text 19 last">And Moooooore</span>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- keyword-wrapper -->
+          </div>
+        </div>
+        <div class="texture"></div>
+      </section> <!-- about -->
+      <section class="project tr hs">
+        <div class="project-inner">
+          <h2 class="headline">PROJECT</h2>
+          <ul class="project-list">
+            <li class="project-item">
+              <div class="img-wrapper col">
+                <img src="./aseets/images/betteroff.jpg" alt class="img">
+              </div>
+              <div class="detail-wrapper col">
+                <h3 class="title">Better Off</h3>
+                <div class="info">
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <ul class="keyword-list">
+                    <li class="keyword-item"><span class="keyword">반응형</span></li>
+                    <li class="keyword-item"><span class="keyword">SCSS</span></li>
+                    <li class="keyword-item"><span class="keyword">GSAP</span></li>
+                    <li class="keyword-item"><span class="keyword">Grid system</span></li>
+                    <li class="keyword-item"><span class="keyword">Javascript[es6]</span></li>
+                    <li class="keyword-item"><span class="keyword">jQuery</span></li>
+                  </ul>
+                </div>
+                <p class="desc">이 프로젝트는 GSAP 애니메이션 기능을 활용하여 시각적으로 역동적인 인터페이스를 구현한 클론 코딩 프로젝트입니다.<br>12칼럼의 그리드 시스템을 활용해 레이아웃을 체계적이고 유연하게 구성했습니다. 또한 order 속성을 사용해 화면크기에 따라 요소 배치가 변경되도록 설게하였습니다.</p>
+                <a href="https://daaayeonn.github.io/work1/" target="_blank" class="link">Visit Site</a>
+              </div>
+              <div class="texture"></div>
+              <div class="dimmed"></div>
+            </li>
+            <li class="project-item two">
+              <div class="img-wrapper col">
+                <img src="./aseets/images/aesop.jpg" alt class="img">
+              </div>
+              <div class="detail-wrapper col">
+                <h3 class="title">Aesop</h3>
+                <div class="info">
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <ul class="keyword-list">
+                    <li class="keyword-item"><span class="keyword">반응형</span></li>
+                    <li class="keyword-item"><span class="keyword">SCSS</span></li>
+                    <li class="keyword-item"><span class="keyword">GSAP</span></li>
+                    <li class="keyword-item"><span class="keyword">Lottie</span></li>
+                    <li class="keyword-item"><span class="keyword">jQuery</span></li>
+                  </ul>
+                </div>
+                <p class="desc">이 프로젝트는 Aesop 웹사이트를 리뉴얼한 작업으로, 외국 사이트의 디자인을 참고하여 제작하였습니다. Lottie를 활용해 JSON 기반의 애니메이션을 삽입하여 매력적인 시각적 효과를 구현했습니다. 또한, GSAP 라이브러리를 사용해 부드럽고 자연스러운 애니메이션과 트랜지션 효과를 추가하여 사용자 경험을 한층 더 강화했습니다. 인터랙션 중심의 디자인과 동적인 요소들이 조화를 이루어, 직관적이면서도 시각적으로 풍부한 웹 페이지로 완성되었습니다.</p>
+                <a href="https://daaayeonn.github.io/work2/" class="link">Visit Site</a>
+              </div>
+              <div class="texture"></div>
+              <div class="dimmed"></div>
+            </li>
+            <li class="project-item three">
+              <div class="img-wrapper col">
+                <img src="./aseets/images/tenzr.jpg" alt class="img">
+              </div>
+              <div class="detail-wrapper col">
+                <h3 class="title">Tenzr</h3>
+                <div class="info">
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <ul class="keyword-list">
+                    <li class="keyword-item"><span class="keyword">PC형</span></li>
+                    <li class="keyword-item"><span class="keyword">GSAP</span></li>
+                    <li class="keyword-item"><span class="keyword">Scroll Trigger</span></li>
+                    <li class="keyword-item"><span class="keyword">Image sequence</span></li>
+                    <li class="keyword-item"><span class="keyword">Lottie</span></li>
+                    <li class="keyword-item"><span class="keyword">jQuery</span></li>
+                  </ul>
+                </div>
+                <p class="desc">이 프로젝트는 PC 화면에 최적화된 웹 페이지로, 최대 1200px 해상도까지 지원하도록 제작되었습니다.<br>이미지 시퀀스를 활용한 애니메이션 효과를 구현했습니다. for문을 사용해 300장의 이미지를 동적으로 생성하고, HITML에 삽입했습니다. GSAP의 ScrollTrigger 플러그인을 활용해 스크롤 진행도에 따라 현재 보여줄 이미지를 계산하여 클래스를 동적으로 업데이트함으로써 부드러운 시퀀스 애니메이션을 구현했습니다.
+                </p>
+                <a href="https://daaayeonn.github.io/work3/" target="_blank" class="link">Visit Site</a>
+              </div>
+              <div class="texture"></div>
+              <div class="dimmed"></div>
+            </li>
+            <li class="project-item four">
+              <div class="img-wrapper col">
+                <img src="./aseets/images/wix.webp" alt class="img">
+              </div>
+              <div class="detail-wrapper col">
+                <h3 class="title">Wix Studio</h3>
+                <div class="info">
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <ul class="keyword-list">
+                    <li class="keyword-item"><span class="keyword">PC형</span></li>
+                    <li class="keyword-item"><span class="keyword">GSAP</span></li>
+                    <li class="keyword-item"><span class="keyword">ScrollTrigger</span></li>
+                    <li class="keyword-item"><span class="keyword">jQuery</span></li>
+                    <li class="keyword-item"><span class="keyword">Space</span></li>
+                  </ul>
+                </div>
+                <p class="desc">이 프로젝트는 PC 화면에 최적화된 웹 페이지로, 최대 1200px 해상도까지 지원하도록 제작되었습니다.<br>우주를 테마로 한 감각적인 비주얼과 역동적인 인터랙션 효과를 구현한 작업으로, GSAP 라이브러리를 활용해 스크롤 트리거와 부드러운 애니메이션을 연출했습니다. 스크롤에 따라 화면 요소들이 자연스럽게 등장하고 이동하며, 테마에 걸맞은 몰입감 있는 사용자 경험을 제공하는 데 중점을 두었습니다. 이 웹 페이지는 시각적 표현과 인터랙션 기술의 가능성을 효과적으로 보여주는 클론 코딩 프로젝트입니다.</p>
+                <a href="https://daaayeonn.github.io/work4/" target="_blank" class="link">Visit Site</a>
+              </div>
+              <div class="texture"></div>
+              <div class="dimmed"></div>
+            </li>
+            <li class="project-item five">
+              <div class="img-wrapper col">
+                <img src="./aseets/images/daegu.jpg" alt class="img">
+              </div>
+              <div class="detail-wrapper col">
+                <h3 class="title">대구광역시청</h3>
+                <div class="info">
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <p class="date">제작기간 - 3day [10.20 - 10.24]</p>
+                  <ul class="keyword-list">
+                    <li class="keyword-item"><span class="keyword">반응형</span></li>
+                    <li class="keyword-item"><span class="keyword">jQuery</span></li>
+                    <li class="keyword-item"><span class="keyword">JSON</span></li>
+                    <li class="keyword-item"><span class="keyword">웹 표준</span></li>
+                  </ul>
+                </div>
+                <p class="desc">이 프로젝트는 관공서 웹 페이지를 클론 코딩한 작업으로, 공공기관 특유의 정돈된 레이아웃과 직관적인 사용자 경험을 구현하는 데 중점을 두었습니다.<br>JSON 데이터를 비동기로 불러와 콘텐츠를 동적으로 렌더링함으로써 효율적이고 유지보수에 용이한 구조를 구축했습니다. 또한, 관공서 웹사이트의 특성을 반영해 웹 표준과 접근성 가이드라인을 준수하여 모든 사용자가 원활히 이용할 수 있도록 설계하였습니다. 시맨틱 HTML과 CSS 기반의 구조적인 레이아웃을 적용했으며, 반응형 디자인을 통해 PC뿐만 아니라 모바일 등 다양한 디바이스 환경에서도 최적의 사용자 경험을 제공합니다.</p>
+                <a href="https://daaayeonn.github.io/work5/" target="_blank" class="link">Visit Site</a>
+              </div>
+              <div class="texture"></div>
+              <div class="dimmed"></div>
+            </li>
+          </ul>
+        </div>
+      </section> <!-- project -->
+
+      <div class="firefly-light"></div>
+    </main>
+    <footer id="footer" class="tr">
+      <div class="inner">
+        <span class="name">Yoo Da Yeon</span>
+        <span class="made">@2024</span>
+      </div>
+      <div class="texture"></div>
+    </footer>
+    <div class="cursor"></div>
+    <div class="cursor-trail-wrap"></div>
+  </div>
+</body>
+</html>

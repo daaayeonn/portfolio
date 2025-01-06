@@ -1,0 +1,195 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ct';
+  src: url('../fonts/CreatoDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ct';
+  src: url('../fonts/CreatoDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'ct';
+  src: url('../fonts/CreatoDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+#wrap {
+  height: 7000px;
+}
+
+:root {
+  --point-color: #a6e12b;
+  --text-color-100: #f1edff;
+  --text-color-500: #999;
+  --text-color-900: #222;
+}
+
+body {
+  font-family: 'ct','Pretendard', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--text-color-900);
+  background: #222;
+  color: #f8f8f8;
+  cursor: none;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: var(--point-color);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, .1);
+}
+
+::selection {
+  background:var(--point-color);
+  color: #f8f8f8;
+}
+
+a:hover {
+  cursor: none;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin-top: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* cursor 부분 시작 */
+.cursor {
+  position: fixed;
+  z-index: 999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background: var(--point-color);
+  box-shadow: 0 0 8px rgb(166 225 43 / 80%), 0 0 15px rgba(255, 255, 255, 0.5);
+  transition: transform .1s, ease width .3s, height .3s;
+}
+.trail {
+  position: fixed;
+  z-index: 999;
+  height: 3px; /* 선의 두께 */
+  background: var(--point-color);
+  pointer-events: none;
+  transform-origin: left center;
+  animation: fadeOut 0.1s ease-out forwards;
+}
+/* a, button에 hover 했을 때 모양 변경 */
+.cursor.hv {
+  width: 30px;
+  height: 30px;
+  background: #f1edff;
+  box-shadow: 0 0 8px rgb(241 237 255 / 80%), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.trail.hv {
+  background: #f1edff;
+}
+
+/* 잔상이 점점 사라지는 애니메이션 */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* ---cursor 부분 끝--- */
+
+.inner {
+  padding: 0 40px;
+}
+
+.headline {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 50px;
+  z-index: 999;
+  opacity: 0;
+}
+
+.firefly-light {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 998;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--point-color);
+  filter: blur(40px);
+  opacity: 0;
+}
+
+.tr {
+  position: relative;
+}
+.texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/texture.png') repeat 0 0 / auto;
+  mix-blend-mode: inherit;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+
+/* 테블릿 분기점 */
+@media (max-width: 1024px) {
+  .inner {
+    padding: 0 20px;
+  }
+
+  .headline {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .firefly-light {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+/* 모바일 분기점 */
+@media (max-width: 767px) {
+  .headline {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .firefly-light {
+    width: 140px;
+    height: 140px;
+  }
+}
