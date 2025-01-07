@@ -285,7 +285,10 @@ $('.project .project-list .project-item:not(:last-child)').each(function(i, el) 
       end: '100% 0%',
       pin: true,
       pinSpacing: false,
+      scrub: 0
     },
+    opacity: 0,
+    ease: 'power1.inOut'
   })
 })
 $('.project .project-list .project-item').each(function(i, el) {

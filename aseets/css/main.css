@@ -14,15 +14,6 @@
   white-space: nowrap;
   gap: 10px;
 }
-.visual .desc{
-  position: absolute;
-  top: 30%;
-  right: 20px;
-  max-width: 400px;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #c5c5c5;
-}
 .visual .visual-headline .headline-text {
   display: flex;
   gap: 10px;
@@ -77,6 +68,124 @@
 }
 .visual .scroll-text.hide {
   opacity: 0;
+}
+.visual .scorpio {
+  position: absolute;
+  top: 15%;
+  right: 50px;
+  z-index: 10;
+  filter: blur(1.2px);
+  opacity: 0.8;
+}
+.visual .scorpio .cir {
+  position: absolute;
+  filter: blur(5px);
+}
+.visual .scorpio .cir.ani svg circle {
+  animation: scorpio 3s ease-out infinite;
+}
+/* circle 위치 잡기 */
+.visual .scorpio .circle1 {
+  bottom: 0;
+  left: 0;
+  transform: translate(-4px, -113px);
+}
+.visual .scorpio .circle2 {
+  top: 0;
+  right: 0;
+  transform: translate(-46px, -5px);
+}
+.visual .scorpio .circle3 {
+  bottom: 0;
+  left: 0;
+  transform: translate(55px, -112px);
+}
+.visual .scorpio .circle4 {
+  bottom: 0;
+  left: 0;
+  transform: translate(25px, -76px);
+}
+.visual .scorpio .circle5 {
+  bottom: 0;
+  left: 0;
+  transform: translate(7px, -55px);
+}
+.visual .scorpio .circle6 {
+  bottom: 0;
+  left: 0;
+  transform: translate(39px, -2px);
+}
+.visual .scorpio .circle7 {
+  bottom: 0;
+  left: 0;
+  transform: translate(125px, 5px);
+}
+.visual .scorpio .circle8 {
+  bottom: 0;
+  left: 0;
+  transform: translate(186px, -13px);
+}
+.visual .scorpio .circle9 {
+  bottom: 0;
+  left: 0;
+  transform: translate(204px, -89px);
+}
+.visual .scorpio .circle10 {
+  bottom: 0;
+  left: 0;
+  transform: translate(213px, -152px);
+}
+.visual .scorpio .circle11 {
+  top: 0;
+  right: 0;
+  transform: translate(-139px, 148px);
+}
+.visual .scorpio .circle12 {
+  top: 0;
+  right: 0;
+  transform: translate(-114px, 119px);
+}
+.visual .scorpio .circle13 {
+  top: 0;
+  right: 0;
+  transform: translate(-74px, 96px);
+}
+.visual .scorpio .circle14 {
+  top: 0;
+  right: 0;
+  transform: translate(-14px, 6px);
+}
+.visual .scorpio .circle15 {
+  top: 0;
+  right: 0;
+  transform: translate(6px, 56px);
+}
+.visual .scorpio .circle16 {
+  top: 0;
+  right: 0;
+  transform: translate(6px, 121px);
+}
+.visual .scorpio .circle17 {
+  top: 0;
+  right: 0;
+  transform: translate(6px, 171px);
+}
+/* ***************** */
+.visual .scorpio svg circle {
+  transform-origin: center;
+  filter: drop-shadow(0px 0px 5px #ffffff);
+  /* animation: scorpio 1.5s ease-out infinite; */
+}
+@keyframes scorpio {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 
 
@@ -262,6 +371,10 @@
 
 /* 중간 분기점 */
 @media (max-width: 1200px) {
+  .visual .scorpio {
+    transform: scale(0.8);
+  }
+
   .preview .preview-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -319,8 +432,10 @@
   .visual .visual-headline .headline-text span {
     padding: 5px 20px;
   }
-  .visual .desc {
-    display: none;
+  .visual .scorpio {
+    top: 10px;
+    right: -50px;
+    transform: scale(0.5);
   }
 
   .about .keyword {
@@ -353,6 +468,10 @@
 }
 
 @media (max-width: 574px) {
+  .visual .scorpio {
+    display: none;
+  }
+
   .preview .preview-list {
     grid-template-columns: repeat(1, 1fr);
   }

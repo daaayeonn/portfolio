@@ -31,6 +31,7 @@
   --text-color-100: #f1edff;
   --text-color-500: #999;
   --text-color-900: #222;
+  --scale-value: clamp(0.5, 1vw, 1);
 }
 
 body {
