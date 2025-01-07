@@ -292,10 +292,11 @@
   background: #222;
   z-index: -1;
 }
-.project .project-list .project-item.two {position: relative; z-index: 1;}
-.project .project-list .project-item.three {position: relative; z-index: 2;}
-.project .project-list .project-item.four {position: relative; z-index: 3;}
-.project .project-list .project-item.five {position: relative; z-index: 4;}
+.project .project-list .project-item.one {position: relative; z-index: 1;}
+.project .project-list .project-item.two {position: relative; z-index: 2;}
+.project .project-list .project-item.three {position: relative; z-index: 3;}
+.project .project-list .project-item.four {position: relative; z-index: 4;}
+.project .project-list .project-item.five {position: relative; z-index: 5;}
 .project .project-list .project-item .col {flex: 1 0 50%;}
 .project .project-list .project-item .img-wrapper {
   overflow: hidden;
