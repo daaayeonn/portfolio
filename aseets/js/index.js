@@ -244,14 +244,20 @@ const preview = gsap.timeline({
     scrub: 0,
   }
 })
-preview.to($('.preview .preview-list'), {
-  y: '-70%',
-  ease: 'power1.inOut'
-}, 'preview')
 preview.to($('.preview .preview-item .preview-img'), {
   y: '10%',
   ease: 'power1.inOut'
 }, 'preview')
+
+ScrollTrigger.matchMedia({
+  "(min-width: 768px)": function () {
+    preview.to($('.preview .preview-list'), {
+      y: '-70%',
+      ease: 'power1.inOut'
+    }, 'preview')
+    
+  },
+})
 // --------------------preview 끝----------------------
 
 
@@ -279,7 +285,6 @@ $('.project .project-list .project-item:not(:last-child)').each(function(i, el) 
       end: '100% 0%',
       pin: true,
       pinSpacing: false,
-      markers: true,
     },
   })
 })

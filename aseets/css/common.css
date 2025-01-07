@@ -117,7 +117,7 @@ a:hover {
 /* ---cursor 부분 끝--- */
 
 .inner {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .headline {
@@ -167,7 +167,7 @@ a:hover {
 /* 테블릿 분기점 */
 @media (max-width: 1024px) {
   .inner {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .headline {
@@ -183,9 +183,22 @@ a:hover {
 
 /* 모바일 분기점 */
 @media (max-width: 767px) {
+  body {
+    cursor: auto;
+  }
+  a:hover {
+    cursor: pointer;
+  }
   .headline {
     font-size: 16px;
     line-height: 30px;
+  }
+
+  .cursor {
+    display: none;
+  }
+  .trail {
+    display: none;
   }
 
   .firefly-light {

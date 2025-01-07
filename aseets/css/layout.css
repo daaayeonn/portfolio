@@ -28,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -37,11 +37,15 @@
 /* 테블릿 분기점 */
 @media (max-width: 1024px) {
   #header .inner  {
-    padding: 10px 20px;
+    padding: 10px;
   }
   #header .name a {
     font-size: 18px;
     line-height: 40px;
+  }
+
+  #footer .inner {
+    padding: 10px;
   }
 }
 
