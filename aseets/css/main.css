@@ -437,6 +437,9 @@
     transform: scale(0.5);
   }
 
+  .about .keyword-wrapper {
+    height: 300dvh;
+  }
   .about .keyword {
     gap: 8px;
   }
