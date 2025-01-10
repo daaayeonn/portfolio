@@ -416,6 +416,9 @@
 
 /* 모바일 분기점 */
 @media (max-width: 767px) {
+  .visual {
+    height: 100dvh;
+  }
   .visual .visual-headline {
     left: 10px;
   }
@@ -441,6 +444,9 @@
     padding: 0 20px;
   }
 
+  .project .project-list .project-item {
+    height: 100dvh;
+  }
   .project .project-list .project-item .img-wrapper { flex: 4 }
   .project .project-list .project-item .detail-wrapper { 
     flex: 6;
