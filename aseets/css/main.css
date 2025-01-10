@@ -440,6 +440,9 @@
   .about .keyword-wrapper {
     height: 300dvh;
   }
+  .about .keyword-sticky {
+    height: 100dvh;
+  }
   .about .keyword {
     gap: 8px;
   }
