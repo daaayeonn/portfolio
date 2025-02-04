@@ -26,6 +26,7 @@
   border-radius: 70px;
   font-weight: 400;
 }
+/* pc에서는 br 비활성화 */
 .visual .visual-headline .headline-text .m-br {
   display: none;
 }
@@ -184,7 +185,6 @@
 }
 
 
-/* ------------preview 시작!------------- */
 .preview .inner {
   padding: 200px 20px;
 }
@@ -241,10 +241,9 @@
   font-size: 18px;
   margin-left: 10px;
 }
-/* ------------preview 시작끝!----------- */
 
 
-/* ------------about 시작!------------- */
+
 .about .keyword-wrapper {
   height: 300vh;
 }
@@ -281,10 +280,9 @@
 .about .keyword .keyword-text.last {
   font-style: italic;
 }
-/* ------------about 시작끝!----------- */
 
 
-/* ------------project 시작!------------- */
+
 .project .project-list .project-item {
   position: relative;
   display: flex;
@@ -360,7 +358,7 @@
   opacity: 0;
   pointer-events: none;
 }
-/* ------------project 시작끝!----------- */
+
 
 
 
@@ -417,7 +415,8 @@
 /* 모바일 분기점 */
 @media (max-width: 767px) {
   .visual {
-    height: 100dvh;
+    height: 100vh;
+    min-height: 100svh;
   }
   .visual .visual-headline {
     left: 10px;
