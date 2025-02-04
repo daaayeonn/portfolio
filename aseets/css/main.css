@@ -437,10 +437,12 @@
   }
 
   .about .keyword-wrapper {
-    height: 300dvh;
+    height: 300vh;
+    min-height: 300svh;
   }
   .about .keyword-sticky {
-    height: 100dvh;
+    height: 300svh;
+    min-height: 300svh;
   }
   .about .keyword {
     gap: 8px;
@@ -450,7 +452,8 @@
   }
 
   .project .project-list .project-item {
-    height: 100dvh;
+    height: 100vh;
+    min-height: 100svh;
   }
   .project .project-list .project-item .img-wrapper { flex: 4 }
   .project .project-list .project-item .detail-wrapper { 
