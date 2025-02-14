@@ -416,7 +416,6 @@
 @media (max-width: 767px) {
   .visual {
     height: 100vh;
-    min-height: 100svh;
   }
   .visual .visual-headline {
     left: 10px;
@@ -438,11 +437,9 @@
 
   .about .keyword-wrapper {
     height: 300vh;
-    min-height: 300svh;
   }
   .about .keyword-sticky {
-    height: 300svh;
-    min-height: 300svh;
+    height: 100vh;
   }
   .about .keyword {
     gap: 8px;
@@ -453,7 +450,6 @@
 
   .project .project-list .project-item {
     height: 100vh;
-    min-height: 100svh;
   }
   .project .project-list .project-item .img-wrapper { flex: 4 }
   .project .project-list .project-item .detail-wrapper { 
