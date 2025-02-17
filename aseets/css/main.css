@@ -286,7 +286,7 @@
 .project .project-list .project-item {
   position: relative;
   display: flex;
-  height: 100vh;
+  height: 100lvh;
   background: #222;
   z-index: -1;
   border: 1px solid red;
@@ -449,9 +449,6 @@
     padding: 0 20px;
   }
 
-  .project .project-list .project-item {
-    height: 100vh;
-  }
   .project .project-list .project-item .img-wrapper { flex: 4 }
   .project .project-list .project-item .detail-wrapper { 
     flex: 6;
