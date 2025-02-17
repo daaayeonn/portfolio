@@ -278,26 +278,13 @@ fireflyLight.to($('.firefly-light'), {
   opacity: 1,
 })
 
-
-function updateVH() {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-
-// 페이지 로드 시 한 번 실행
-updateVH();
-
-// 화면 크기 변경될 때마다 실행
-window.addEventListener('resize', updateVH);
-
 // --------------------project 시작--------------------
 $('.project .project-list .project-item:not(:last-child)').each(function(i, el) {
   gsap.to($(el), {
     scrollTrigger: {
       trigger: el,
       start: '100% 100%',
-      // end: '100% 0%',
-      end: () => `+=${window.innerHeight}`,
+      end: '100% 0%',
       pin: true,
       pinSpacing: false,
       scrub: 0
