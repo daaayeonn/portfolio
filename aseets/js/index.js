@@ -159,7 +159,10 @@ class firefly {
 let f = [];
 
 function draw() {
-  if (f.length < 100) {
+  // 767px 이하일 때 50, 그 이상일 때 100
+  let maxFireflies = window.innerWidth <= 767 ? 50 : 100; 
+
+  if (f.length < maxFireflies) {
     for (let j = 0; j < 10; j++) {
       f.push(new firefly());
     }
@@ -283,7 +286,7 @@ $('.project .project-list .project-item:not(:last-child)').each(function(i, el) 
       trigger: el,
       start: '100% 100%',
       end: '100% 0%',
-      pin: true,
+      pin: false,
       pinSpacing: false,
       scrub: 0
     },
