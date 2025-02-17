@@ -17,6 +17,16 @@ gsap.ticker.lagSmoothing(0)
 // -----
 
 
+function refreshScrollTrigger() {
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 200); // 주소창 애니메이션이 끝나는 걸 고려해서 약간의 딜레이 추가
+}
+
+// 창 크기가 변경될 때 다시 계산
+window.addEventListener("resize", refreshScrollTrigger);
+
+
 // ---------------------공통 시작----------------------
 // !!cursor!!
 const $cursor = $('.cursor');
@@ -277,15 +287,6 @@ const fireflyLight = gsap.timeline({
 fireflyLight.to($('.firefly-light'), {
   opacity: 1,
 })
-
-function refreshScrollTrigger() {
-  setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 200); // 주소창 애니메이션이 끝나는 걸 고려해서 약간의 딜레이 추가
-}
-
-// 창 크기가 변경될 때 다시 계산
-window.addEventListener("resize", refreshScrollTrigger);
 
 // --------------------project 시작--------------------
 $('.project .project-list .project-item:not(:last-child)').each(function(i, el) {

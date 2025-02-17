@@ -282,17 +282,16 @@
 }
 
 .pin-spacer {
-  height: 100lvh !important;
-  border: 2px solid blue;
+  /* height: 100lvh !important; */
 }
 
 .project .project-list .project-item {
   position: relative;
   display: flex;
-  height: 100lvh !important;
+  /* height: 100lvh !important; */
+  height: 100vh;
   background: #222;
   z-index: -1;
-  border: 1px solid red;
 }
 .project .project-list .project-item.one {position: relative; z-index: 1;}
 .project .project-list .project-item.two {position: relative; z-index: 2;}
