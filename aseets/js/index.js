@@ -285,7 +285,8 @@ $('.project .project-list .project-item:not(:last-child)').each(function(i, el) 
     scrollTrigger: {
       trigger: el,
       start: '100% 100%',
-      end: '100% 0%',
+      // end: '100% 0%',
+      end: () => `+=${window.innerHeight}`,
       pin: true,
       pinSpacing: false,
       scrub: 0
