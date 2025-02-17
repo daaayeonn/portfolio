@@ -286,7 +286,7 @@
 .project .project-list .project-item {
   position: relative;
   display: flex;
-  height: 100vh;
+  height: var(--vh, 100vh);
   background: #222;
   z-index: -1;
 }
