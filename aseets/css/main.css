@@ -281,7 +281,10 @@
   font-style: italic;
 }
 
-
+.pin-spacer {
+  height: 100lvh !important;
+  border: 2px solid blue;
+}
 
 .project .project-list .project-item {
   position: relative;
