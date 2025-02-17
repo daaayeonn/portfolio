@@ -277,6 +277,8 @@ const fireflyLight = gsap.timeline({
 fireflyLight.to($('.firefly-light'), {
   opacity: 1,
 })
+// 스크롤 좌표를 강제적으로 보정
+ScrollTrigger.normalizeScroll(true);
 
 // --------------------project 시작--------------------
 $('.project .project-list .project-item:not(:last-child)').each(function(i, el) {
