@@ -86,6 +86,9 @@
   animation: scorpio 3s ease-out infinite;
 }
 /* circle 위치 잡기 */
+.visual .scorpio .cir {
+  background: var(--point-color);
+}
 .visual .scorpio .circle1 {
   bottom: 0;
   left: 0;
@@ -281,14 +284,9 @@
   font-style: italic;
 }
 
-.pin-spacer {
-  /* height: 100lvh !important; */
-}
-
 .project .project-list .project-item {
   position: relative;
   display: flex;
-  /* height: 100lvh !important; */
   height: 100vh;
   background: #222;
   z-index: -1;
@@ -417,9 +415,6 @@
 
 /* 모바일 분기점 */
 @media (max-width: 767px) {
-  .visual {
-    height: 100vh;
-  }
   .visual .visual-headline {
     left: 10px;
   }
@@ -438,12 +433,6 @@
     transform: scale(0.5);
   }
 
-  .about .keyword-wrapper {
-    height: 300vh;
-  }
-  .about .keyword-sticky {
-    height: 100vh;
-  }
   .about .keyword {
     gap: 8px;
   }
