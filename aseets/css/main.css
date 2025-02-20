@@ -321,6 +321,20 @@
   flex-direction: column;
   height: 100%;
 }
+.project .project-list .project-item .info .info-desc {
+  display: flex;
+  gap: 4px;
+  height: 24px;
+}
+.project .project-list .project-item .info .info-desc .justify {
+  width: 56px;
+  text-align: justify;
+}
+.project .project-list .project-item .info .info-desc .justify::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
 .project .project-list .project-item .keyword-list {
   display: flex;
   gap: 10px;
@@ -445,8 +459,11 @@
     flex: 6;
     padding: 20px 10px;
   }
-  .project .project-list .project-item .date {
+  .project .project-list .project-item .info-desc {
     font-size: 14px;
+  }
+  .project .project-list .project-item .info .info-desc .justify {
+    width: 48px;
   }
   .project .project-list .project-item .keyword-list {
     gap: 5px;
