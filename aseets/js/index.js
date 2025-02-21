@@ -17,13 +17,18 @@ gsap.ticker.lagSmoothing(0)
 // -----
 
 
-function refreshScrollTrigger() {
-  setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 200); // 주소창 애니메이션이 끝나는 걸 고려해서 약간의 딜레이 추가
+function debounce(func, wait) {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
 }
 
-// 창 크기가 변경될 때 다시 계산
+const refreshScrollTrigger = debounce(() => {
+  ScrollTrigger.refresh();
+}, 200); // 주소창 애니메이션이 끝난 후 실행
+
 window.addEventListener("resize", refreshScrollTrigger);
 
 
